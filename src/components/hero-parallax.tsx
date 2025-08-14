@@ -51,13 +51,13 @@ export const HeroParallax = ({
     springConfig
   );
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
+    useTransform(scrollYProgress, [0, 0.2], [-500, 200]),
     springConfig
   );
   return (
     <div
       ref={ref}
-      className="h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[160vh] md:h-[210vh] lg:h-[230vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -69,7 +69,7 @@ export const HeroParallax = ({
         }}
         className=""
       >
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-6 md:space-x-12 lg:space-x-20 mb-20">
           {firstRow.map((product) => (
             <ProductCard
               product={product}
@@ -78,7 +78,7 @@ export const HeroParallax = ({
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row  mb-20 space-x-20 ">
+        <motion.div className="flex flex-row mb-20 space-x-6 md:space-x-12 lg:space-x-20 ">
           {secondRow.map((product) => (
             <ProductCard
               product={product}
@@ -87,7 +87,7 @@ export const HeroParallax = ({
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-6 md:space-x-12 lg:space-x-20">
           {thirdRow.map((product) => (
             <ProductCard
               product={product}
@@ -135,7 +135,7 @@ export const ProductCard = ({
         y: -20,
       }}
       key={product.title}
-      className="group/product h-96 w-[30rem] relative shrink-0"
+      className="group/product relative shrink-0 h-48 w-56 sm:h-60 sm:w-72 md:h-80 md:w-[26rem] lg:h-96 lg:w-[30rem]"
     >
       <a
         href={product.link}
@@ -147,6 +147,7 @@ export const ProductCard = ({
           alt={product.title}
           width={500}
           height={500}
+          sizes="(max-width: 640px) 14rem, (max-width: 768px) 18rem, (max-width: 1024px) 26rem, 30rem"
           priority
         />
       </a>

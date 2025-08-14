@@ -2,7 +2,6 @@ import { Navigation } from "@/components/navigation";
 import { AuroraText } from "@/components/magicui/aurora-text";
 import { RainbowButton } from "@/components/magicui/rainbow-button";
 import { MagicCard } from "@/components/magicui/magic-card";
-import { BorderBeam } from "@/components/magicui/border-beam";
 import { Check } from "lucide-react";
 
 export default function PricingPage() {
@@ -96,7 +95,6 @@ export default function PricingPage() {
                                     : ""
                                     }`}
                                 gradientColor={plan.highlighted ? "#3b82f6" : "#262626"}
-                                gradientOpacity={plan.highlighted ? 0.3 : 0.8}
                             >
 
                                 {/* Plan Header */}
@@ -135,16 +133,7 @@ export default function PricingPage() {
                                     </RainbowButton>
                                 )}
                             </div>
-                            {/* Border Beam for Enterprise */}
-{/*                             
-                                <BorderBeam
-                                    className="absolute inset-0 rounded-xl"
-                                    size={250}
-                                    duration={12}
-                                    colorFrom="#ffaa40"
-                                    colorTo="#9c40ff"
-                                /> */}
-                          
+
                         </div>
                     ))}
                 </div>

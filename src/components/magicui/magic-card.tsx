@@ -2,14 +2,13 @@
 
 import { cn } from "@/lib/utils";
 import { motion, useMotionTemplate, useMotionValue } from "motion/react";
-import React, { MouseEvent, ReactElement } from "react";
+import React, { MouseEvent } from "react";
 
 interface MagicCardProps {
   children: React.ReactNode;
   className?: string;
-  gradientSize?: number;
+  gradientSize?: number;    
   gradientColor?: string;
-  gradientOpacity?: number;
 }
 
 export const MagicCard: React.FC<MagicCardProps> = ({
@@ -17,7 +16,6 @@ export const MagicCard: React.FC<MagicCardProps> = ({
   className,
   gradientSize = 200,
   gradientColor = "#262626",
-  gradientOpacity = 0.8,
 }) => {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);

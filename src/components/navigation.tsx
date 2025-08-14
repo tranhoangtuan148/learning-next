@@ -2,7 +2,7 @@
 
 import { RainbowButton } from "@/components/magicui/rainbow-button";
 import { AnimatedThemeToggler } from "@/components/magicui/animated-theme-toggler";
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -97,35 +97,39 @@ export function Navigation() {
         </div>
 
         {/* Mobile Navigation */}
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden"
-          >
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <Link
-                href="#features"
-                className="block px-3 py-2 text-foreground/80 hover:text-foreground transition-colors duration-200"
-              >
-                Features
-              </Link>
-              <Link
-                href="#about"
-                className="block px-3 py-2 text-foreground/80 hover:text-foreground transition-colors duration-200"
-              >
-                About
-              </Link>
-              <Link
-                href="#contact"
-                className="block px-3 py-2 text-foreground/80 hover:text-foreground transition-colors duration-200"
-              >
-                Contact
-              </Link>
-            </div>
-          </motion.div>
-        )}
+        <AnimatePresence initial={false} mode="wait">
+          {isOpen && (
+            <motion.div
+              key="mobile-menu"
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.25, ease: "easeInOut" }}
+              className="md:hidden overflow-hidden"
+            >
+              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <Link
+                  href="#features"
+                  className="block px-3 py-2 text-foreground/80 hover:text-foreground transition-colors duration-200"
+                >
+                  Features
+                </Link>
+                <Link
+                  href="#about"
+                  className="block px-3 py-2 text-foreground/80 hover:text-foreground transition-colors duration-200"
+                >
+                  About
+                </Link>
+                <Link
+                  href="#contact"
+                  className="block px-3 py-2 text-foreground/80 hover:text-foreground transition-colors duration-200"
+                >
+                  Contact
+                </Link>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </motion.nav>
   );

@@ -4,11 +4,11 @@ import { products } from "@/lib/sample-data";
 // import { motion } from "motion/react";
 import * as motion from "motion/react-client"
 import { Package, Truck, Car, DollarSign, Check } from "lucide-react";
-import { AuroraText } from "@/components/magicui/aurora-text";
+
 
 export default function Home() {
   // Pixels to scroll before in-view animations trigger
-  const thresholdPx = 300;
+  const thresholdPx = 100;
   const container = {
     hidden: { opacity: 0, y: 20 },
     show: {
@@ -27,40 +27,6 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Navigation />
       <HeroParallax products={products} />
-
-      {/* Hero Section */}
-
-      <motion.section
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.2, margin: `-${thresholdPx}px 0px -${thresholdPx}px 0px` }}
-      >
-      <section className="pb-20 px-4 text-center">
-        <div className="max-w-4xl mx-auto">
-          <motion.h1 
-            className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent"
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.0 }}
-            viewport={{ once: true, margin: `-${thresholdPx}px 0px -${thresholdPx}px 0px` }}
-          >
-            <AuroraText>Transportation Management System</AuroraText>
-          </motion.h1>
-          <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-            Streamline your logistics operations with our comprehensive TMS platform. 
-            From order management to cost optimization, we&apos;ve got your transportation needs covered.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
-              Get Started
-            </button>
-            <button className="px-8 py-3 border border-border rounded-lg hover:bg-muted transition-colors">
-              Watch Demo
-            </button>
-          </div>
-        </div>
-      </section>
-      </motion.section>
 
       {/* Core Features */}
       <motion.section

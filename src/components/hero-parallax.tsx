@@ -8,6 +8,7 @@ import {
   useSpring,
   MotionValue,
 } from "motion/react";
+import { AuroraText } from "@/components/magicui/aurora-text";
 
 export const HeroParallax = ({
   products,
@@ -103,8 +104,8 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
-      <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-        The Ultimate <br /> Transportation Management System
+      <h1 className="text-4xl md:text-5xl lg:text-7xl tracking-tighter font-bold">
+         The <AuroraText>Ultimate</AuroraText> <br /> Transportation Management System
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
       Streamline your logistics operations with our comprehensive TMS platform. 

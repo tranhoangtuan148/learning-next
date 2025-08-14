@@ -1,51 +1,51 @@
 export const products = [
   {
-    title: "Moonbeam",
-    link: "#",
+    title: "Order Management",
+    link: "#orders",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=500&h=300&fit=crop&crop=center",
   },
   {
-    title: "Cursor",
-    link: "#",
+    title: "Shipment Planning",
+    link: "#shipments",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&crop=center",
   },
   {
-    title: "Rogue",
-    link: "#",
+    title: "Fleet Management",
+    link: "#fleet",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
+      "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=500&h=300&fit=crop&crop=center",
   },
   {
-    title: "Editorially",
-    link: "#",
+    title: "Route Optimization",
+    link: "#routes",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+      "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=500&h=300&fit=crop&crop=center",
   },
   {
-    title: "Editrix AI",
-    link: "#",
+    title: "Cost Analytics",
+    link: "#analytics",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop&crop=center",
   },
   {
-    title: "Pixel Perfect",
-    link: "#",
+    title: "Vendor Portal",
+    link: "#vendors",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+      "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=500&h=300&fit=crop&crop=center",
   },
   {
-    title: "Algochurn",
-    link: "#",
+    title: "Real-time Tracking",
+    link: "#tracking",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=300&fit=crop&crop=center",
   },
   {
-    title: "Aceternity UI",
-    link: "#",
+    title: "Dashboard Analytics",
+    link: "#dashboard",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop&crop=center",
   },
   {
     title: "Tailwind Master Kit",

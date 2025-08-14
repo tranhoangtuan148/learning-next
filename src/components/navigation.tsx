@@ -24,7 +24,7 @@ export function Navigation() {
             className="flex-shrink-0"
           >
             <Link href="/" className="text-2xl font-bold text-foreground">
-              NextJS
+              TMS Pro
             </Link>
           </motion.div>
 
@@ -42,6 +42,12 @@ export function Navigation() {
                 className="text-foreground/80 hover:text-foreground transition-colors duration-200"
               >
                 About
+              </Link>
+              <Link
+                href="/dashboard"
+                className="text-foreground/80 hover:text-foreground transition-colors duration-200"
+              >
+                Dashboard
               </Link>
               <Link
                 href="#contact"

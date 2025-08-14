@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NextJS Landing Page",
-  description: "Modern landing page with Hero Parallax and animated theme toggle",
+  title: "TMS Pro - SAAS",
+  description: "The Ultimate Transportation Management System - Multiplatform",
 };
 
 export default function RootLayout({

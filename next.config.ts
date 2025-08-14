@@ -10,6 +10,11 @@ const nextConfig: NextConfig = {
         hostname: "aceternity.com",
         pathname: "/images/**",
       },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        pathname: "/**",
+      }
     ],
     // Alternatively, you could use: domains: ["aceternity.com"],
   },

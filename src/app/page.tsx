@@ -2,7 +2,9 @@ import { HeroParallax } from "@/components/hero-parallax";
 import { Navigation } from "@/components/navigation";
 import { products } from "@/lib/sample-data";
 // import { motion } from "motion/react";
+import Link from "next/link";
 import * as motion from "motion/react-client"
+import { RainbowButton } from "@/components/magicui/rainbow-button";
 import { Package, Truck, Car, DollarSign, Check } from "lucide-react";
 
 
@@ -158,9 +160,10 @@ export default function Home() {
                 <p className="text-muted-foreground mb-6">
                   Join hundreds of companies already using our TMS to optimize their transportation operations.
                 </p>
-                <button className="px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
-                  Start Free Trial
-                </button>
+                
+                <RainbowButton asChild className="px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
+                  <Link href="/pricing">Start Free Trial</Link>
+                </RainbowButton>
               </div>
             </motion.div>
           </div>
@@ -216,12 +219,12 @@ export default function Home() {
             Contact us to learn how our TMS can transform your logistics operations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
+            <RainbowButton className="px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
               Schedule Demo
-            </button>
-            <button className="px-8 py-3 border border-border rounded-lg hover:bg-muted transition-colors">
+            </RainbowButton>
+            <RainbowButton variant="outline" className="px-8 py-3 border border-border rounded-lg hover:bg-muted transition-colors">
               Contact Sales
-            </button>
+            </RainbowButton>
           </div>
         </div>
       </motion.section>

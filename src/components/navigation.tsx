@@ -32,25 +32,25 @@ export function Navigation() {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               <Link
-                href="#features"
+                href="/#features"
                 className="text-foreground/80 hover:text-foreground transition-colors duration-200"
               >
                 Features
               </Link>
               <Link
-                href="#about"
+                href="/#about"
                 className="text-foreground/80 hover:text-foreground transition-colors duration-200"
               >
                 About
               </Link>
               <Link
-                href="/dashboard"
+                href="/pricing"
                 className="text-foreground/80 hover:text-foreground transition-colors duration-200"
               >
-                Dashboard
+                Pricing
               </Link>
               <Link
-                href="#contact"
+                href="/#contact"
                 className="text-foreground/80 hover:text-foreground transition-colors duration-200"
               >
                 Contact
@@ -115,19 +115,25 @@ export function Navigation() {
             >
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <Link
-                  href="#features"
+                  href="/#features"
                   className="block px-3 py-2 text-foreground/80 hover:text-foreground transition-colors duration-200"
                 >
                   Features
                 </Link>
                 <Link
-                  href="#about"
+                  href="/#about"
                   className="block px-3 py-2 text-foreground/80 hover:text-foreground transition-colors duration-200"
                 >
                   About
                 </Link>
                 <Link
-                  href="#contact"
+                  href="/pricing"
+                  className="block px-3 py-2 text-foreground/80 hover:text-foreground transition-colors duration-200"
+                >
+                  Pricing
+                </Link>
+                <Link
+                  href="/#contact"
                   className="block px-3 py-2 text-foreground/80 hover:text-foreground transition-colors duration-200"
                 >
                   Contact

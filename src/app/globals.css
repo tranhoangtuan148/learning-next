@@ -55,6 +55,12 @@
     background-position: 200%;
     }
   }
+  
+  @keyframes border-beam {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }
 
 :root {
